@@ -46,7 +46,7 @@ class Linda(object):
         else:
             print '"Oh, ok.  I guess we have different things on our minds."'
         
-        if Hero.counter == 1:
+        if Hero.counter >= 1:
             
             print "Linda looks receptive to your advances now.  You can get a date."
             answer = raw_input('ask Linda out?\n(yes,no)> ')
@@ -73,7 +73,8 @@ class Coach(object):
             print '"Here\'s a tip."'
             print '"Word is that Linda was talking about %ss and likes %s"' % (item, Linda.interests.get(item))
         elif a == 2:
-            print '"Check out the \'storage closet\'! Next time you\'re at your desk, I\'ll send Linda over!"'
+            print '"Check out the \'storage closet\' next time you get up."'
+            print '"I\'ll send Linda over!"'
         elif a == 3:
             print '"Yo!"'
         else:
